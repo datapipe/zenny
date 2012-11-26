@@ -36,6 +36,23 @@ module Zenny
         data[:keys] = keys if keys
         json_request('DeviceRouter','device_router','getInfo', [data])
       end
+
+      def set_zen_property(device_id, property, value)
+        data = {
+          :uid => device_id,
+          :zProperty => property,
+          :value => value
+        }
+        json_request('DeviceRouter', 'device_router', 'setZenProperty', [data])
+      end
+
+      def get_zen_property(device_id, property)
+        data = {
+          :uid => device_id,
+          :zProperty => property
+        }
+        json_request('DeviceRouter', 'device_router', 'getZenProperty', [data])
+      end
    
       def find_devices_by_name(name, opts={})
         opts[:name] = name
