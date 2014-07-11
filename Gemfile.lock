@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    zenny (0.0.1)
+    zenny (0.0.3)
       httpclient (~> 2.2.0)
       multi_json (~> 1.0)
       tzinfo (~> 0.3.20)
@@ -10,7 +10,7 @@ GEM
   remote: http://rubygems.org/
   specs:
     httpclient (2.2.7)
-    multi_json (1.7.6)
+    multi_json (1.7.7)
     tzinfo (0.3.37)
 
 PLATFORMS
